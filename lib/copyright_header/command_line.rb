@@ -53,6 +53,10 @@ module CopyrightHeader
             @options[:copyright_software] = name
           end
 
+          opts.on( '--software-version VERSION', 'The version corresponding to this piece of software (e.g. "1.0")' ) do|version|
+            @options[:software_version] = version
+          end
+
           opts.on( '--copyright-software-description DESC', 'The detailed description for this piece of software (e.g. "A utility to manipulate copyright headers on source code files")' ) do|desc|
             @options[:copyright_software_description] = desc
           end
